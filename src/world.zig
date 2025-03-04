@@ -183,7 +183,7 @@ fn vendor() ?void {
 
             output.print(output.selectable_color ++ "\n{s: <" ++ devtools.numberAsString(objects.longest_name_len + 4) ++ "}" ++ output.standard_color ++ "{: <12}{}", .{ name, cost, quantity });
         }
-        output.print("\n\n" ++ " " ** (objects.longest_name_len + 4 - 9) ++ "you have {} currency\n\n", .{pc.copper});
+        output.print("\n\n" ++ " " ** (objects.longest_name_len + 4 - 9) ++ "you have {} copper\n\n", .{pc.copper});
 
         // =========================
         //       the other bit
