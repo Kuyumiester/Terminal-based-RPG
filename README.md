@@ -1,7 +1,5 @@
 # Terminal-Based RPG
 
-This is a WIP RPG that you can play in a terminal emulator.
-
 This program is written in the Zig programming language.
 See this page for installing Zig: https://ziglang.org/learn/getting-started/#direct
 The code is compatible with Zig 0.13.
@@ -12,7 +10,9 @@ Open a terminal emulator in the same directory/folder as the "build.zig" file an
     zig build run
 
 
-## How to Play
+## About the game
+
+This is a WIP RPG that you can play in a terminal emulator.
 
 All interactions in the game are achieved by typing a string and pressing enter. Gameplay typically consists of
 selecting between several options presented to you. Options will be in blue text. Select an option by entering
