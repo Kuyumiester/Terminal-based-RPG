@@ -55,3 +55,8 @@ can cast a spell. Here's generally how each spell works:
 
 ![shop](/screenshot1.png)
 ![combat](/screenshot2.png)
+
+### Things to note
+
+On MacOS and Linux, some buttons—like arrow keys—can mess up the UI.
+Despite using save files, your game can't be saved yet.
