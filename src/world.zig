@@ -163,8 +163,8 @@ const cost_catalogue = [_]devtools.Int(80){
 
 fn vendor() ?void {
     output.newScreen();
+    output.writeAll("\nyou walk into a shop. a vendor shows you his wares");
     while (true) {
-        output.writeAll("\nyou walk into a shop. a vendor shows you his wares");
         output.writeAll("\n\n" ++ output.selectable_color ++ "leave\n" ++ output.standard_color ++ " " ** (objects.longest_name_len + 4) ++ "cost" ++ " " ** 8 ++ "in stock");
 
         // =======================
@@ -202,14 +202,14 @@ fn vendor() ?void {
                     return;
                 },
                 2 => {
-                    output.newScreen();
                     if (pc.copper < inventory.costs[s.index]) {
                         input.maintainInvalidInputs();
                         output.writeAll("not enough money\n");
                         continue;
                     }
+                    output.newScreen();
                     pc.copper -= inventory.costs[s.index];
-                    output.print("purchased {s}", .{inventory.names[s.index]});
+                    output.print("purchased {s}\n", .{inventory.names[s.index]});
                     pc.addToInventory(inventory.ids[s.index], 1);
 
                     if (inventory.quantities[s.index] > 1) {
