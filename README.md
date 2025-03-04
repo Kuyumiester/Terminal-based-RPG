@@ -58,5 +58,5 @@ can cast a spell. Here's generally how each spell works:
 
 ### Things to note
 
-On MacOS and Linux, some buttons—like arrow keys—can mess up the UI.
+On MacOS and Linux, some buttons—like arrow keys—can mess up the UI.  
 Despite using save files, your game can't be saved yet.
